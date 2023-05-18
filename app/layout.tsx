@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from './components/Header/Header'
+import Sidebar from './components/Sidebar/Sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+         {/* App body */}
+         <div className="app__body d-flex">
+              {/* Sidebar */}
+              <Sidebar></Sidebar>
+              {children}
+              {/* Feed */}
+              {/* <Feed /> */}
+              {/* widgets */}
+              {/* <Widgets /> */}
+          </div>
+        
       </body>
     </html>
   )

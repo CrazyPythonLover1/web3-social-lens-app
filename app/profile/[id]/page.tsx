@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation';
 import { client, getPublications, getProfile } from '../../../api'
+import Image from 'next/image';
 
 export default function Profile() {
   /* create initial state to hold user profile and array of publications */
@@ -55,9 +56,12 @@ export default function Profile() {
   return (
     <div className='pt-20'>
       <div className='flex flex-col justify-center items-center'>
-        <img
+        <Image
           className='w-64 rounded-full'
           src={profile.avatarUrl}
+          alt="profile image"
+          width="400"
+          height="400"
         />
         <p className='text-4xl mt-8 mb-8'>{profile.handle}</p>
         <p className='text-center text-xl font-bold mt-2 mb-2 w-1/2'>{profile.bio}</p>

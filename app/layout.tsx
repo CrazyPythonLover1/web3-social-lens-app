@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
          {/* App body */}
-         <div className="app__body d-flex">
+         <div className="app__body flex justify-between">
               {/* Sidebar */}
               <Sidebar></Sidebar>
               {children}
@@ -28,6 +28,7 @@ export default function RootLayout({
               {/* <Feed /> */}
               {/* widgets */}
               {/* <Widgets /> */}
+              <div className='right-sidebar'></div>
           </div>
         
       </body>

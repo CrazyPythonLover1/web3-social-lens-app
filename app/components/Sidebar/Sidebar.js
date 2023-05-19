@@ -13,7 +13,7 @@ import ExpandMoreOutlined from "@mui/icons-material/ExpandMoreOutlined"
 const Sidebar = () => {
 
     return (
-        <div className="sidebar w-600">
+        <div className="sidebar">
             <SidebarRow src="https://avatars2.githubusercontent.com/u/53335400?s=460&u=66cb296ad68ebb5d86c162a6b5aece93977865fd&v=4" title="Mainul Islam Faruqi" />
             <SidebarRow Icon={LocalHospitalIcon} title="COVID-19 Information Center" />
 

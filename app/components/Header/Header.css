@@ -97,6 +97,17 @@
     height: 12px;
     padding: 20px;
 }
+
+.header__right .account__control > .connect {
+    background-color: #e4e6eb;
+    color: #1c1e21;
+    margin-left:10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
 /* .header__right .account__control > .MuiSvgIcon-root{
     font-size: 12px;
 } */

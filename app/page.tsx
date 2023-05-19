@@ -3,7 +3,9 @@
 
 import { useEffect, useState } from 'react'
 import { client, exploreProfiles } from '../api'
-import Link from 'next/link'
+import Link from 'next/link';
+import Feed from './views/Feed/Feed';
+import StoryReel from './views/Home/StoryReel'
 
 export default function Home() {
   /* create initial state to hold array of profiles */
@@ -37,7 +39,9 @@ export default function Home() {
     }
   }
   return (
-    <div className='pt-20'>
+    <div className='middle__content' style={{width: '550px'}}>
+      <StoryReel />
+      <Feed />
       <div className='flex flex-col justify-center items-center'>
         <h1 className='text-5xl mb-6 font-bold'>Hello Lens 🌿</h1>
         {
